@@ -174,13 +174,85 @@
 #     return s
 # print(twosum())
 
-z = 10  # global variable
+# z = 10  # global variable
 
-def threesum():
-    x = int(input("Enter x value: "))
-    y = int(input("Enter y value: "))
-    s = z+x+y
-    return s
-print(threesum())
-print(f'global variable z = {z}')
-print(f'local variable x = {x}')
+# def threesum():
+#     x = int(input("Enter x value: "))
+#     y = int(input("Enter y value: "))
+#     s = z+x+y
+#     return s
+# print(threesum())
+# print(f'global variable z = {z}')
+# print(f'local variable x = {x}') # This will raise an error because x is not defined globally
+
+
+# x = (1,)
+# y = (4,5,6)
+# z = x + y
+# print(z)
+# x = x + y
+# print(x)
+
+# dict = {}
+# dict['Ford'] = "Car"
+# dict['Python'] = "The Python Programming Language"
+# dict[2] = "This sentence is stored here."
+
+# print(dict['Ford'])
+# print(dict['Python'])
+# print(dict[2])
+# for key in dict:
+#     print(f'key: {key}, value: {dict[key]}')
+
+# x = 3
+# y = 2.15315315313532
+
+# print("We have defined two numbers,")
+# print(f"x = {x}")
+# print(f"y = {y}")
+
+# a = "135.31421"
+# b = "133.1112223"2
+
+# c = float(a) + float(b)
+# d = int(float(a)) + int(float(b))
+# print(d)
+# print(c)
+
+# from random import random, randint
+# print(random())
+# print(int(random()*100))
+# print(randint(1,100))
+
+#reading the file in python
+# data = open("C:\\Users\\chakr\\OneDrive\\Desktop\\sample.txt", "r")
+# content = data.readlines()
+# for i in content:
+#     print(i, end = '')
+
+# with open("C:\\Users\\chakr\\OneDrive\\Desktop\\sample.txt") as f:
+#     lines = f.readlines()
+#     for i in lines:
+#         print(i, end ='')
+
+import os.path
+
+filepath = "C:\\Users\\chakr\\OneDrive\\Desktop\\sample.txt"
+
+if not os.path.isfile(filepath):
+    print("file does not exist")
+else:
+    with open(filepath, 'a+') as file:
+        file.write("\nnew line by sundeep kumar ")
+        file.seek(0)
+        lines = file.readlines()
+        for i in lines:
+            print(i, end= '')
+
+
+
+
+
+
+
+
