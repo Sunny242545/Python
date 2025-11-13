@@ -74,18 +74,113 @@
 # for i in range(1,len(s)+1):
 #     print(" "*(len(s)-i)+"*"*i)
 
-s="sundeep"
-#printing character at index 2
-print(s[2])
-#printing characters from 0-4
-print(s[0:5])
-#printing characters from last to first
-print(s[::-1])
-#printing characters from 2 to second last
-print("characters from 2 to second last " +s[2:-2:-1])
-#printing characters from last  to second last using length function
-print("characters from last  to second last using length function " + s[len(s)-1:len(s)-3:-1])
-#printing characters from last  to second last using negative indexing
-print("characters from last  to second last " + s[-1:-3:-1])
-#printing characters from 0 to second last with step 2
-print("characters from 0 to second last with step 2 " + s[0:-1:2])
+# s="sundeep"
+# #printing character at index 2
+# print(s[2])
+# #printing characters from 0-4
+# print(s[0:5])
+# #printing characters from last to first
+# print(s[::-1])
+# #printing characters from 2 to second last
+# print("characters from 2 to second last " +s[2:-2:1])
+# #printing characters from last  to second last using length function
+# print("characters from last  to second last using length function " + s[len(s)-1:len(s)-3:-1])
+# #printing characters from last  to second last using negative indexing
+# print("characters from last  to second last " + s[-1:-3:-1])
+# #printing characters from 0 to second last with step 2
+# print("characters from 0 to second last with step 2 " + s[0:-1:2])
+
+# l = ["sundeep", "kumar", "murali", "mahi", "sundeep"]
+# l.append("newton")
+# print(l)
+# l.insert(2, "Abhi")
+# print(l)
+# l.remove("sundeep")
+# print(l)
+# l.sort()
+# print(l)
+# # l.reverse()
+# # print(l)
+# l.sort(reverse=True)
+# print(l)
+
+# list = [[0, 1], [1, 2], [2, 3]]
+
+# print(list)
+# print(list[0][0])
+# print(list[1][1])
+
+# list = []
+
+# for i in range(3):
+#     list.append([])
+#     for j in range(3):
+#         list[i].append(i+j)
+
+# print(list)
+# print(list[0][0])
+# print(list[1][2])
+
+# id = "xyz123"
+# password = "abc@123"
+# input_id = input("Enter your id: ")
+# if input_id == id:
+#     input_password = input("Enter your password: ")
+#     for i in range(3):
+#         if input_password == password:
+#             print("Login Successful")
+#             break
+#         else:
+#             print("Incorrect Password")
+#             if i < 2:
+#                 input_password = input("Re-enter your password: ")
+#             else:
+#                 print("Account Locked")
+# else:
+#     print("Invalid ID")
+
+# print("welcome to the guess my age game")
+# age = 25
+# exit_code = 999
+# guess = int(input("Guess my age: "))
+# while guess != exit_code:
+#     if guess < age:
+#         print("Too low")
+#     else:
+#         print("Too high")
+#     guess = int(input("Guess my age: "))
+
+# def sum(a, b):
+#     return a + b
+# a = int(input("Enter first number: "))
+# b= int(input("Enter second number: "))
+        
+# print(sum(a, b))
+
+
+#f string in python to print the string with variables and expressions easily
+# def multiply(x, y):
+#     # ptint('x*y ='{x * y})
+#     print(f'x * y = {x * y}')
+
+# multiply(3, 2)
+
+# difference between local variables and global variables in python
+
+# def twosum():
+#     x = int(input("Enter x value: "))
+#     y = int(input("Enter y value: "))
+#     s = x+y
+#     return s
+# print(twosum())
+
+z = 10  # global variable
+
+def threesum():
+    x = int(input("Enter x value: "))
+    y = int(input("Enter y value: "))
+    s = z+x+y
+    return s
+print(threesum())
+print(f'global variable z = {z}')
+print(f'local variable x = {x}')
