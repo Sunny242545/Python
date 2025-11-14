@@ -408,21 +408,92 @@
 # obj2.printid()
 # obj2.printname()
 
-class User:
-    def __init__(self, name):
-        self.name = name
-    def printname(self):
-        print(f'User name is {self.name}')
-class Programer(User):
-    def __init__(self, name):
-        # self.name = name
-        super().__init__(name)
-    def doPython(self):
-        print(f'user use python programing language')
-obj1 = User("sundeep")
-obj1.printname()
+# class User:
+#     def __init__(self, name):
+#         self.name = name
+#     def printname(self):
+#         print(f'User name is {self.name}')
+# class Programer(User):
+#     def __init__(self, name):
+#         # self.name = name
+#         super().__init__(name)
+#     def doPython(self):
+#         print(f'user use python programing language')
+# obj1 = User("sundeep")
+# obj1.printname()
 
-obj2 = Programer("kumar")
-obj2.printname()
-obj2.doPython()
+# obj2 = Programer("kumar")
+# obj2.printname()
+# obj2.doPython()
+
+
+# # Nested Classes Example
+# class Human:
+#     def __init__(self, name):
+#         self.name = name
+#         self.head = self.Head(name)
+#         self.legs = self.Legs(name)
+
+#     class Head:
+#         def __init__(self, name):
+#             self.name = name
+#         def think(self):
+#             print(self.name +" Thinking")
+#     class Legs:
+#         def __init__(self, name):
+#             self.name = name
+#         def walk(self):
+#             print(self.name +' Walking')
+
+# person = Human("Sundeep")
+# person.head.think()
+# person.legs.walk()
+
+
+# class Teacher:
+#     def  __init__(self, name = None):
+#         self.name = name
+#     def teach(self):
+#         print(f'Teacher {self.name} is teaching')
+#     class Student:
+#         def __init__(self, outer, name = None):
+#             self.outer = outer
+#             self.name = name
+#         def learn(self):
+#             print(f'Student {self.name} is learning from teacher {self.outer.name}')
+        
+# teacher = Teacher("Murali")
+# teacher.teach()
+# student = Teacher.Student(teacher, "Sundeep")
+# student.learn()
+
+
+class Teacher:
+    def  __init__(self, name = None):
+        self.name = name
+    def teach(self):
+        print(f'Teacher {self.name} is teaching')
+
+class Professor:
+    def __init__(self, name = None):
+        self.name = name
+    def teach(self):
+        print(f'Professor {self.name} is teaching')
+
+class Student:
+    def __init__(self, outer, name = None):
+        self.outer = outer
+        self.name = name
+    def learn(self):
+        print(f'Student {self.name} is learning from teacher {self.outer.name}')
+    
+teacher = Teacher("Murali")
+teacher.teach()
+professor = Professor("Newton")
+professor.teach()
+student1 = Student(teacher, "Sundeep")
+student1.learn()
+student2 = Student(professor, "Mahi")
+student2.learn()
+
 
