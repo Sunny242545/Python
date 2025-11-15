@@ -467,33 +467,42 @@
 # student = Teacher.Student(teacher, "Sundeep")
 # student.learn()
 
+# Nested Classes Example without using inner class
 
-class Teacher:
-    def  __init__(self, name = None):
-        self.name = name
-    def teach(self):
-        print(f'Teacher {self.name} is teaching')
+# class Teacher:
+#     def  __init__(self, name = None):
+#         self.name = name
+#     def teach(self):
+#         print(f'Teacher {self.name} is teaching')
 
-class Professor:
-    def __init__(self, name = None):
-        self.name = name
-    def teach(self):
-        print(f'Professor {self.name} is teaching')
+# class Professor:
+#     def __init__(self, name = None):
+#         self.name = name
+#     def teach(self):
+#         print(f'Professor {self.name} is teaching')
 
-class Student:
-    def __init__(self, outer, name = None):
-        self.outer = outer
-        self.name = name
-    def learn(self):
-        print(f'Student {self.name} is learning from teacher {self.outer.name}')
+# class Student:
+#     def __init__(self, outer, name = None):
+#         self.outer = outer
+#         self.name = name
+#     def learn(self):
+#         print(f'Student {self.name} is learning from teacher {self.outer.name}')
     
-teacher = Teacher("Murali")
-teacher.teach()
-professor = Professor("Newton")
-professor.teach()
-student1 = Student(teacher, "Sundeep")
-student1.learn()
-student2 = Student(professor, "Mahi")
-student2.learn()
+# teacher = Teacher("Murali")
+# teacher.teach()
+# professor = Professor("Newton")
+# professor.teach()
+# student1 = Student(teacher, "Sundeep")
+# student1.learn()
+# student2 = Student(professor, "Mahi")
+# student2.learn()
 
 
+import pandas as pd
+class ReadData:
+    def __init__(self, data = None):
+        self.data = pd.read_csv(data)
+    def display(self):
+        print(self.data.head())
+read_data = ReadData("C:\\Users\\chakr\\OneDrive\\Desktop\\data.txt.txt")
+read_data.display()
