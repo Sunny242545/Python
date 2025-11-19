@@ -1,11 +1,13 @@
-# Python
-This course provides the complete knowledge on python from basic to advance
+<h1>Python</h1>
 
-This repo has multiple python files 
+<p>This course provides complete knowledge of Python, from basic to advanced concepts.</p>
 
-Each python file contains file as a topic name
+<h2>Repository Structure</h2>
+<p>The repository contains multiple Python files. Each file is named after the topic it covers.</p>
 
-Check on variables names and paths if necessary
-
-files contain multiple functions or classes in each, I suggest you to un comment the class of line you want to execute and run on your own
-This Course provides complete knowledge on python from basic to advance
+<h2>Notes</h2>
+<ul>
+  <li>Check variable names and paths if necessary.</li>
+  <li>Each file may contain multiple functions or classes.</li>
+  <li>To run a specific class or function, uncomment the corresponding line and execute it on your own.</li>
+</ul>
