@@ -1,2 +1,2 @@
 # Python
-First step to my 6 Months Self learning Course
+This Course provides complete knowledge on python from basic to advance
